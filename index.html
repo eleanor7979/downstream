@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownStream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+<header>
+    <h1>DownStream</h1>
+    <p>Stay educated about where water flows.</p>
+</header>
+<dialog>
+    <p>yayaya</p>
+</dialog>
+<section class="map">
+    <div id="water-map"></div>
+    <div id="panel"></div>
+</section>
+<div class="alert hidden" id="web-banner">Storm is coming</div>
+<div id="web-title"></div>
+<div id="web-description"></div>
+<ol id="action-list"></ol>
+<dialog id="popup"></dialog>
+<section class="choose-area">
+    <select id="town">
+        <option value="">Pick your area</option>
+        <option value="41.50384181616324, -73.96859993792408">Beacon</option>
+        <option value="41.55320088402557, -73.79568845790678">East Fishkill</option>
+        <option value="41.53534776753778, -73.89868238862567">Fishkill</option>
+        <option value="41.78400065718902, -73.93381469978023">Hyde Park</option>
+        <option value="41.64969535547339, -73.760709384943">LaGrangeville</option>
+        <option value="41.59640280541181, -73.91142719022716">Wappingers Falls</option>
+        <option value="41.70527711802296, -73.92777001728861">Poughkeepsie</option>
+        </select>
+    <button id="location">Use Location</button>
+</section>
+<script src="app.js"></script>
+</body>
+<footer>
+    <p>This project was made using The Hydro Network-Linked Data Index from USGS, Leaflet, OpenStreetMap, and Open-Meteo</p>
+</footer>
+</html>

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.choose-area {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#town {
+    padding: 40px;
+}
+
+#location {
+    padding: 40px;
+}
+
+.hidden{
+    display: none;
+}
+
+.alert {
+    background: #fff3b0;
+    border: 1px solid #ffe5a5;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }
+}
+
+#water-map {
+    height: 60vh;
+    border: 1px solid #a3c4f3;
+    flex: 2;
+}
+
+#panel {
+    background: #a9def9;
+    flex: 1;
+}
