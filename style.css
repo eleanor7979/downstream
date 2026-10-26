@@ -33,16 +33,21 @@
     flex-direction: column;
     @media (min-width: 800px) {
         flex-direction: row;
+        #water-map {
+            flex: 2;
+        }
+        #panel {
+            flex: 1;
+        }
     }
 }
 
 #water-map {
     height: 60vh;
     border: 1px solid #a3c4f3;
-    flex: 2;
 }
 
 #panel {
     background: #a9def9;
-    flex: 1;
+    padding: 12px;
 }
