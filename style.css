@@ -45,9 +45,11 @@
 #water-map {
     height: 60vh;
     border: 1px solid #a3c4f3;
+    margin-bottom: 12px;
 }
 
 #panel {
     background: #a9def9;
     padding: 20px;
+    margin-bottom: 12px;
 }
