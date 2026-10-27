@@ -15,7 +15,7 @@ async function goToSpot(lat, lon) {
     yourMarker = L.marker([lat, lon]).addTo(waterMap).bindPopup("You are here").openPopup();
     waterMap.setView([lat, lon], 12);
     await drawTrace(lat, lon)
-    const weatherStatus = getWeatherData(lat, lon)
+    const weatherStatus = await getWeatherData(lat, lon)
     updateWebBanner(weatherStatus)
     updateActionList(weatherStatus)
 }
